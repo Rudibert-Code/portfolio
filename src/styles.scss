@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
+    --site-bg: black;
     --main-bg: #262E34;
     --overlay: #2D3840;
     --highlight: #89BCD9;
@@ -8,5 +9,16 @@
 
 body{
     margin: 0;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--site-bg);
+}
+
+.base{
+    width: 1440px;
+    height: 100vh;
     background-color: var(--main-bg);
 }
