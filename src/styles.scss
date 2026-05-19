@@ -16,3 +16,34 @@ body{
     background-color: var(--main-bg);
     color: var(--basic);
 }
+.size{
+    width: 1440px;
+}
+.photo{
+    height: 683px;
+    width: 535px;
+}
+.bg-shape{
+    width: 594px;
+    height: 710px;
+    background-image: url(/assets/BG_shape.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
