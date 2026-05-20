@@ -6,6 +6,16 @@
     --highlight: #89BCD9;
     --basic: #F8F5EC;
 }
+@font-face {
+  font-family: "Anta";
+  src: url('../public/fonts/Anta-Regular.ttf');
+}
+@font-face {
+  font-family: "Josefin";
+  src: url(../public/fonts/JosefinSans-Regular.ttf);
+}
+
+
 
 body{
     margin: 0;
@@ -16,34 +26,63 @@ body{
     background-color: var(--main-bg);
     color: var(--basic);
 }
+h1{
+    font-family: 'Anta';
+    font-size: 60px;
+    margin: 0;
+}
+h2{
+    font-family: 'Josefin';
+    font-size: 30px;
+    margin: 0;
+}
+.box{
+
+}
 .size{
-    width: 1440px;
+    max-width: 1440px;
+    height: 100vh;
 }
 .photo{
     height: 683px;
     width: 535px;
+     rotate: 45deg;
 }
 .bg-shape{
-    width: 594px;
-    height: 710px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 700px;
+     rotate: -45deg;
     background-image: url(/assets/BG_shape.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
+    background-size: contain;
 }
 .row{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.end{
+    align-items: end;
 }
 .column{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 25px;
 }
 
 .icon{
     width: 30px;
     height: 30px;
+}
+
+.arrow{
+    width: 38px;
+    height: 89px;
 }
