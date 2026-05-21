@@ -14,6 +14,9 @@
   font-family: "Josefin";
   src: url(../public/fonts/JosefinSans-Regular.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .font-a{
     font-family: 'Anta';
@@ -61,6 +64,12 @@ h2{
     cursor: pointer;
     text-decoration: none;
     font-family: 'Josefin';
+    font-weight: bold;
+    color: var(--main-bg);
+
+    &:hover{
+        color: var(--basic);
+    }
 }
 .btn{
     cursor: pointer;
@@ -80,7 +89,7 @@ h2{
     align-items: center;
     height: 700px;
     width: 700px;
-     rotate: -45deg;
+    rotate: -45deg;
     background-image: url(/assets/BG_shape.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -94,6 +103,9 @@ h2{
 .gap{
     gap: 30px;
 }
+.space-around{
+    justify-content: space-around;
+}
 .end{
     width: 100%;
     align-items: end;
@@ -102,6 +114,10 @@ h2{
     width: 100%;
     justify-content: end;
 }
+.start-y{
+    gap: 0;
+    align-items: start;
+}
 .column{
     display: flex;
     flex-direction: column;
@@ -109,12 +125,10 @@ h2{
     align-items: center;
     gap: 25px;
 }
-
 .icon{
     width: 30px;
     height: 30px;
 }
-
 .arrow{
     width: 38px;
     height: 89px;
@@ -126,15 +140,16 @@ h2{
 }
 .why-me-ceter{
     width: 860px;
-    height: 176px;
+    height: 128px;
 }
 .icon-size{
     width: 74px;
     height: 63px;
 }
 .text-para{
+    margin: 0;
     width: 379px;
-    height: 176px;
+    height: 128px;
 }
 .location-para{
     width: 429px;
@@ -143,6 +158,9 @@ h2{
 .bottom-button-box{
     width: 100%;
     height: 48px;
+}
+.button-size{
+    
 }
 button{
     cursor: pointer;
