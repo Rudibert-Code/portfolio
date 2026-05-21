@@ -1,1 +1,20 @@
-<p>my-skills works!</p>
+<section id="my-skills row">
+    <h3>My Skills</h3>
+    <section>
+        <section class="flex-wrap">
+            @for (skill of skills; track $index) {
+                <div class="column">
+                    <img src="{{skill.img}}" alt="">
+                    <p class="font-b color-highliht">{{skill.name}}</p>
+                </div>
+            }
+        </section>
+        <section class="flex-wrap">
+            <p>I'm currently taking part in an intensive cours in frontend development at Developer Akademie.</p>
+            <img src="" alt="">
+            <p>Throughout my career I have worked for a variety of mobile-game studios. During this time I had the pleasure to continuously learn and expand upon my skill set.
+                While I'm independently motivated, I highly enjoy collaboration in a group setting and the opportunity to grow working along side other talented individuals.
+            </p>
+        </section>
+    </section>
+</section>

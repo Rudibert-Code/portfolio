@@ -60,6 +60,12 @@ h2{
     font-size: 30px;
     margin: 0;
 }
+h3{
+    font-family: 'Josefin';
+    font-size: 30px;
+    color: var(--highlight);
+    margin: 0;
+}
 .selection{
     cursor: pointer;
     text-decoration: none;
@@ -69,6 +75,7 @@ h2{
 
     &:hover{
         color: var(--basic);
+        background-image: url('/portfolio/public/assets/Ellipse_24.png');
     }
 }
 .btn{
@@ -103,8 +110,15 @@ h2{
 .gap{
     gap: 30px;
 }
+.no-gap{
+    gap: 0;
+}
 .space-around{
     justify-content: space-around;
+}
+.centered{
+    justify-content: center;
+    align-items: center;
 }
 .end{
     width: 100%;
@@ -162,12 +176,23 @@ h2{
 .button-size{
     
 }
+.arrow-frame{
+    width: 38px;
+    height: 89px;
+    border-color: #89BCD9;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: #262e3400;
+    &:hover{
+        background-color: #3F454A;
+        transition: 0.5s;
+    }
+}
 button{
     cursor: pointer;
     width: 134px;
     height: 48px;
     color: var(--highlight);
-    border-radius: 4px;
     border-color: #89BCD9;
     border-style: solid;
     border-radius: 50px;
@@ -178,4 +203,13 @@ button{
         background-color: #89BCD9;
         transition: 0.5s;
     }
+}
+.my-skills{
+    width: 1440px;
+    height: 100vh;
+}
+.flex-wrap{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
 }
