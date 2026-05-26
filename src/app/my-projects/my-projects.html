@@ -10,17 +10,34 @@
                 </div>
             }
         </div>
-        <section class="project-box row">
-            <div class="column">
-                <h4>Placeholder</h4>
-                <p>Placeholder</p>
+        <section class="project-box">
+            <div class="project-details gap">
+                <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
+                <section class="column">
+                    <h4>Placeholder</h4>
+                    <p>Placeholder</p>
+                </section>
             </div>
             <div class="column">
-                <h4></h4>
-                <div class="row">
-
+                <h4>Technologies</h4>
+                <div class="row gap">
+                    @for (technology of technologies; track $index) {
+                        <div class="project-icon">
+                        <img src="{{technology.icon1}}" alt="">
+                        </div>
+                        <div class="project-icon">
+                        <img src="{{technology.icon2}}" alt="">
+                        </div>
+                        <div class="project-icon">
+                        <img src="{{technology.icon3}}" alt="">
+                        </div>
+                    }
                 </div>
-                <img src="" alt="">
+                <img class="project-img" src="/assets/projetcs/SpaceBlast.png" alt="">
+                <div class="row gap">
+                    <button class="btn">Live Test</button>
+                    <button class="btn">GitHub</button>
+                </div>
             </div>
         </section>
     </section>

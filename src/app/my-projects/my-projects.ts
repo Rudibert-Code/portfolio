@@ -7,6 +7,11 @@ interface Projects {
   organisation?:string,
   experiences?:string,
 }
+interface Technologies {
+  icon1:string,
+  icon2?:string,
+  icon3?:string,
+}
 
 @Component({
   selector: 'app-my-projects',
@@ -27,6 +32,13 @@ export class MyProjects {
       about:'Project description...',
       organisation:'Workflow details...',
       experiences:'Experiecnes...',
+    },
+  ]
+  technologies:Technologies[]=[
+    {
+      icon1: '/assets/icons/Icons_JavaScript.png',
+      icon2: '/assets/icons/Icons_HTML.png',
+      icon3: '/assets/icons/Icons_CSS.png',
     },
   ]
 }
