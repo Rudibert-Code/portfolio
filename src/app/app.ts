@@ -5,10 +5,11 @@ import { Footer } from './layout/footer/footer';
 import { WhyMe } from './layout/why-me/why-me'
 import { MySkills } from './my-skills/my-skills';
 import { MyProjects } from './my-projects/my-projects';
+import { Comments } from './comments/comments';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Header,Footer,WhyMe,MySkills,MyProjects],
+  imports: [RouterOutlet,Header,Footer,WhyMe,MySkills,MyProjects,Comments],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

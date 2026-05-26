@@ -18,7 +18,15 @@
     border-top-right-radius: 20px;
     &:hover{
         background-color: var(--overlay);
+        transition: 0.5s;
     }
+    > h4{
+    color: var(--highlight);
+    &:hover{
+        color: var(--basic);
+        transition: 0.5s;
+    }
+}
 }
 .project-icon{
     width: 38px;

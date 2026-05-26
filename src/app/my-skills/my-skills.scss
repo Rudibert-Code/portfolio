@@ -1,11 +1,17 @@
 .my-skills-bg{
     width: 380px;
     height: 380px;
-    background-image: url(/portfolio/public/assets/my-skills-bg1.png);
+    background-image: url(/assets/my-skills-bg1.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
+
+    &:hover{
+        background-image: url(/assets/my-skills-bg2.png);
+        transition: 0.5s;
+    }
 }
