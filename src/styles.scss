@@ -23,7 +23,9 @@ html {
 .font-b{
     font-family: 'Josefin';
 }
-
+a{
+    text-decoration: none;
+}
 .color-highliht{
     color: var(--highlight);
 }

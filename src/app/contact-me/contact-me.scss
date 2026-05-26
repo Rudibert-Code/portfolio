@@ -5,7 +5,7 @@
     align-items: center;
 }
 .contact-base{
-    width: 100%;
+    width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,4 +41,23 @@ input{
 .large-input{
     width: 911px;
     height: 194px;
+}
+.contact-checkbox{
+    width: 24px;
+    height: 24px;
+    background-image: url(/assets/check-box-messages.png);
+    background-repeat: no-repeat;
+    margin: 0;
+
+    &:hover{
+        background-image: url(/assets/my-skill-highlight.png);
+    }
+}
+.left{
+    width: 911px;
+    justify-content: start;
+}
+.right{
+    width: 911px;
+    justify-content: end;
 }
