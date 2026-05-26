@@ -1,6 +1,8 @@
 <section class="my-skills column" id="my-skills">
-    <h3>My Skills</h3>
-    <section class="row">
+    <div class="my-skill-header row centered">
+        <h3>My Skills</h3>
+    </div>
+    <section class="my-skill-base row">
         <section class="flex-wrap">
             @for (skill of skills; track $index) {
                 <div class="column">
@@ -9,7 +11,7 @@
                 </div>
             }
         </section>
-        <section class="flex-wrap">
+        <section class="my-skills-bg column">
             <p>I'm currently taking part in an intensive cours in frontend development at Developer Akademie.</p>
             <img src="" alt="">
             <p>Throughout my career I have worked for a variety of mobile-game studios. During this time I had the pleasure to continuously learn and expand upon my skill set.
