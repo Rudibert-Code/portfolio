@@ -6,10 +6,11 @@ import { WhyMe } from './layout/why-me/why-me'
 import { MySkills } from './my-skills/my-skills';
 import { MyProjects } from './my-projects/my-projects';
 import { Comments } from './comments/comments';
+import { ContactMe } from './contact-me/contact-me';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Header,Footer,WhyMe,MySkills,MyProjects,Comments],
+  imports: [RouterOutlet,Header,Footer,WhyMe,MySkills,MyProjects,Comments,ContactMe],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

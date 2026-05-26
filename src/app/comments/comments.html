@@ -1,1 +1,16 @@
-<p>comments works!</p>
+<section class="comment-base column font-b" id="comments">
+    <h3>Need a teamplayer? Here's what my colleges say about me.</h3>
+    <section class="comment-box gap">
+        @for (comment of evaluation; track $index) {
+            <div class="column comment-bg">
+                <h3>{{comment.name}}</h3>
+                <div class="row gap">
+                    <p>Project</p>
+                    <p class="color-highliht">{{comment.project}}</p>
+                </div>
+                <p>{{comment.comment}}</p>
+                <a class="btn color-highliht" href="">{{comment.link}}</a>
+            </div>
+        }
+    </section>
+</section>
