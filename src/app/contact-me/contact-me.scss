@@ -4,3 +4,41 @@
     justify-content: space-between;
     align-items: center;
 }
+.contact-base{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+}
+.even{
+    justify-content: space-evenly;
+}
+.contact-icons{
+    width: 20px;
+    height: 20px;
+}
+.contact-data{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+}
+.content-box{
+    width: 445px;
+    height: 80px;
+}
+input{
+    border-color: #89BCD9;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: #00000000;
+    color: var(--basic);
+}
+.padding{
+    padding-left: 32px;
+}
+.large-input{
+    width: 911px;
+    height: 194px;
+}
