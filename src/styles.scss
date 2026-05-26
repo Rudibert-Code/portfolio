@@ -60,6 +60,12 @@ h3{
     color: var(--highlight);
     margin: 0;
 }
+h4{
+    font-family: 'Josefin';
+    font-size: 24px;
+    color: var(--basic);
+    margin: 0;
+}
 .selection{
     cursor: pointer;
     text-decoration: none;
@@ -100,6 +106,9 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.bound-left{
+    justify-content: start;
 }
 .gap{
     gap: 30px;
