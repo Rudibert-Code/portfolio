@@ -1,0 +1,14 @@
+footer{
+    width: 1440px;
+    height: 214px;
+    background-color: var(--highlight);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-legal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
