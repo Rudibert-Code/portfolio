@@ -12,3 +12,17 @@ footer{
     justify-content: center;
     align-items: start;
 }
+.footer-icon{
+    width: 30px;
+    height: 30px;
+    &__github{
+        background-image: url(/portfolio/public/assets/icons/links/github_dark.png);
+    }
+    &__email{
+        background-image: url(/portfolio/public/assets/icons/links/email_dark.png);
+    }
+    &__linkedin{
+        background-image: url(/portfolio/public/assets/icons/links/linkedin_dark.png);
+    }
+    background-repeat: no-repeat;
+}
