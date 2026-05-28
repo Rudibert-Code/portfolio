@@ -15,13 +15,13 @@
 .comment-bg{
     width: 400px;
     height: 400px;
-    background-image: url(/assets/my-skills-bg1.png);
+    background-image: url(/assets/text-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 
     &:hover{
-        background-image: url(/assets/my-skills-bg2.png);
+        background-image: url(/assets/text-bg-hover.png);
         transition: 0.5s;
     }
 }
