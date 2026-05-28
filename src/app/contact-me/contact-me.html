@@ -11,14 +11,12 @@
             <p class="font-b color-basic">Placeholder text ...</p>
         </div>
         <div class="content-box">
-            <div class="contact-data">
-                <img class="contact-icons" src="/assets/icons/Icons_email.png" alt="">
-                <p class="font-b color-basic">E-Mail: onoofelo@gmail.com</p>
-            </div>
-            <div class="contact-data">
-                <img class="contact-icons" src="/assets/icons/Icons_phone.png" alt="">
-                <p class="font-b color-basic">Tel: 01707821309</p>
-            </div>
+            @for (contact of contacts; track $index) {
+                <div class="contact-data padding">
+                    <img src="{{contact.icon}}" alt="">
+                    <p>{{contact.info}}</p>
+                </div>
+            }
         </div>
     </section>
     <section class="contact-base">

@@ -19,10 +19,16 @@
     height: 20px;
 }
 .contact-data{
+    cursor: pointer;
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 16px;
+    font-family: 'Josefin';
+    color: var(--basic);
+    &:hover{
+        color: var(--highlight);
+    }
 }
 .content-box{
     width: 445px;
