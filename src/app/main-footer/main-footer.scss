@@ -13,16 +13,37 @@ footer{
     align-items: start;
 }
 .footer-icon{
-    width: 30px;
-    height: 30px;
-    &__github{
-        background-image: url(/portfolio/public/assets/icons/links/github_dark.png);
-    }
     &__email{
-        background-image: url(/portfolio/public/assets/icons/links/email_dark.png);
+        width: 30px;
+        height: 30px;
+        background-image: url(/assets/icons/links/email_dark.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        &:hover{
+            background-image: url(/assets/icons/links/email_white.png);
+            transition: 0.5s;
+        }
+    }
+    &__github{
+        width: 30px;
+        height: 30px;
+        background-image: url(/assets/icons/links/github_dark.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        &:hover{
+            background-image: url(/assets/icons/links/github_white.png);
+            transition: 0.5s;
+        }
     }
     &__linkedin{
-        background-image: url(/portfolio/public/assets/icons/links/linkedin_dark.png);
+        width: 30px;
+        height: 30px;
+        background-image: url(/assets/icons/links/linkedin_dark.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        &:hover{
+            background-image: url(/assets/icons/links/linkedin_white.png);
+            transition: 0.5s;
+        }
     }
-    background-repeat: no-repeat;
 }

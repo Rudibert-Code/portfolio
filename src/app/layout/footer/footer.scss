@@ -27,3 +27,25 @@ nav{
 
     z-index: 3;
 }
+
+.lang-selection{
+    &__base{
+        cursor: pointer;
+        text-decoration: none;
+        font-family: 'Josefin';
+        color: var(--main-bg);
+        &:hover{
+            color: var(--basic);
+        }
+    }
+    &__white{
+        cursor: pointer;
+        text-decoration: none;
+        font-family: 'Josefin';
+        color: var(--basic);
+        
+        background-image: url(/assets/my-skill-highlight.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

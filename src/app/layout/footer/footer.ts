@@ -1,9 +1,38 @@
 import { Component } from '@angular/core';
 
+interface Language{
+  name:string,
+  class:string,
+  selected:boolean
+}
+
 @Component({
   selector: 'app-footer',
   imports: [],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })
-export class Footer {}
+export class Footer {
+  languages:Language[]=[
+    {
+      name:'DE',
+      class:'__base',
+      selected:false
+    },
+    {
+      name:'EN',
+      class:'__base',
+      selected:false
+    },
+  ]
+
+  selected(language:Language){
+    if (language.selected==true) {
+      language.class = '__base';
+      language.selected = false;
+    } else{
+      language.class = '__white';
+      language.selected = true;
+    }
+  }
+}

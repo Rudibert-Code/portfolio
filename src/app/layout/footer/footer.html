@@ -1,6 +1,3 @@
-
-
-
 <nav>
     <img src="" alt="">
     <a class="selection" href="#why-me">Why me</a>
@@ -8,8 +5,9 @@
     <a class="selection" href="#my-projects">Projects</a>
     <a class="selection" href="#contact-me">Contact</a>
     <div class="row gap">
-        <p class="selection">DE</p>
-        <p class="selection">EN</p>
+        @for (language of languages; track $index) {
+            <p (click)="selected(language)" class="lang-selection{{language.class}}">{{language.name}}</p>
+        }
     </div>
 </nav>
 

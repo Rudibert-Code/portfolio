@@ -6,9 +6,9 @@
     <section>
         <img src="/assets/Logo_dark.png" alt="">
     </section>
-    <section>
-        <a class="footer-icon__github" href=""></a>
-        <a class="footer-icon__email" href=""></a>
-        <a class="footer-icon__linkedin" href=""></a>
+    <section class="row gap">
+        @for (link of link; track $index) {
+            <div class="footer-icon{{link.class}}"></div>
+        }
     </section>
 </footer>
