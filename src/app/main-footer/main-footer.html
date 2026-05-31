@@ -8,7 +8,7 @@
     </section>
     <section class="row gap">
         @for (link of link; track $index) {
-            <div class="footer-icon{{link.class}}"></div>
+            <div (click)="open(link)" class="footer-icon{{link.class}}"></div>
         }
     </section>
 </footer>
