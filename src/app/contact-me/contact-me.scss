@@ -26,6 +26,7 @@
     gap: 16px;
     font-family: 'Josefin';
     color: var(--basic);
+
     &:hover{
         color: var(--highlight);
     }
@@ -51,12 +52,11 @@ input{
 .contact-checkbox{
     width: 24px;
     height: 24px;
-    background-image: url(/assets/check-box-messages.png);
+    background-image: url(/assets/checkbox/checkbox-default.png);
     background-repeat: no-repeat;
-    margin: 0;
-
+    background-size: contain;
     &:hover{
-        background-image: url(/assets/my-skill-highlight.png);
+        background-image: url(/assets/checkbox/checkbox-hover.png);
     }
 }
 .left{

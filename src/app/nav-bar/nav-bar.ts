@@ -7,13 +7,13 @@ interface Language{
 }
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-nav-bar',
   imports: [],
-  templateUrl: './footer.html',
-  styleUrl: './footer.scss',
+  templateUrl: './nav-bar.html',
+  styleUrl: './nav-bar.scss',
 })
-export class Footer {
-  languages:Language[]=[
+export class NavBar {
+    languages:Language[]=[
     {
       name:'DE',
       class:'__base',
