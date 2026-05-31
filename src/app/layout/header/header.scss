@@ -1,3 +1,10 @@
+.header-container{
+    width: 100%;
+    height: calc(100vh - 104px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .links-base{
     width: 66px;
     height: 200px;
@@ -54,7 +61,7 @@
 .photo{
     height: 683px;
     width: 535px;
-     rotate: 45deg;
+    rotate: 45deg;
 }
 
 

@@ -1,30 +1,15 @@
 nav{
     position:sticky;
     top: 0;
-    left: 0;
-
-    width: 1440px;
+    right: 0;
+    width: 100%;
     height: 104px;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     color: var(--site-bg);
     background-color: var(--highlight);
-
-    z-index: 3;
-}
-.nav-container{
-    position: absolute;
-    
-    top: calc(100vh - 104px);
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    z-index: 1;
+    z-index: 100;
 }
 .lang-selection{
     &__base{
