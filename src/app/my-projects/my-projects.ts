@@ -43,6 +43,10 @@ export class MyProjects {
   ]
 
   liveTest(){
+    window.open("https://bjoernsagmeister.developerakademie.net/jump-n-run");
+  }
+  gitHub(){
+    window.open("https://github.com/Rudibert-Code/jump-n-run.git");
     
   }
 }
