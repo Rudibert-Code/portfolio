@@ -41,4 +41,8 @@ export class MyProjects {
       icon3: '/assets/icons/Icons_CSS.png',
     },
   ]
+
+  liveTest(){
+    
+  }
 }

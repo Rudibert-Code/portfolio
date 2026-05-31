@@ -1,6 +1,6 @@
-<section class="my-projects-container nav-bar-padding">
+<section class="my-projects-container">
 
-    <section class="my-projects-base column" id="my-projects">
+    <section class="my-projects-base column nav-bar-padding" id="my-projects">
         <div>
             <h3>My Projetcs</h3>
         </div>
@@ -35,9 +35,9 @@
                             </div>
                         }
                     </div>
-                    <img class="project-img" src="/assets/projetcs/SpaceBlast.png" alt="">
+                    <img class="project-img" src="/assets/projetcs/SpaceBlast.png" alt="" id="project-screen-shot">
                     <div class="row gap">
-                        <button class="btn">Live Test</button>
+                        <button (click)="liveTest()" class="btn">Live Test</button>
                         <button class="btn">GitHub</button>
                     </div>
                 </div>
