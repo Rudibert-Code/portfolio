@@ -29,18 +29,18 @@
         <section class="contact-base">
             <div class="input-area">
                 <img class="checkmark-position hide" src="/assets/icons/Icons_check.png" alt="" id="name">
-                <p class="padding font-b color-highliht">Your Name</p>
+                <p class="padding font-b color-highliht" id="nameValue">Your Name</p>
                 <input (keyup)="checkInputValue('contactname')" class="content-box input-frame" type="text" value="" id="contactname">
             </div>
             <div class="input-area">
                 <img class="checkmark-position hide" src="/assets/icons/Icons_check.png" alt="" id="email">
-                <p class="padding font-b color-highliht">Your Email</p>
+                <p class="padding font-b color-highliht"  id="emailValue">Your Email</p>
                 <input (keyup)="checkInputValue('contactemail')" class="content-box input-frame" type="text" value="" id="contactemail">
             </div>
         </section>
         <section class="relative">
             <img class="checkmark-position hide" src="/assets/icons/Icons_check.png" alt="" id="message">
-            <p class="padding font-b color-highliht">Your Message</p>
+            <p class="padding font-b color-highliht"  id="messageValue">Your Message</p>
             <input (keyup)="checkInputValue('contactmessage')" class="content-box-large input-frame" type="text" value="" id="contactmessage">
         </section>
         <section class="contact-base left">
