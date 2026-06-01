@@ -17,6 +17,21 @@
     align-items: center;
     gap: 21px;
 }
+
+.input-area{
+    width: 445px;
+    height: 80px;
+    position: relative;
+}
+.checkmark-position{
+    position: absolute;
+    top: 64px;
+    right: 24px;
+}
+.hide{
+    display: none;
+}
+
 .button-active{
     cursor: pointer;
     width: 134px;
@@ -66,6 +81,10 @@
     width: 445px;
     height: 80px;
 }
+.relative{
+    margin-top: 32px;
+    position: relative;
+}
 .content-box-large{
     width: 911px;
     height: 194px;
@@ -79,10 +98,11 @@
     &:hover{
         background-color: var(--overlay);
     }
-    &__error{
-        border-color:var (--error);
-    }
 }
+.error{
+    border-color: var(--error);
+}
+
 .padding{
     padding-left: 32px;
 }
@@ -95,6 +115,13 @@
     &:hover{
         background-image: url(/assets/checkbox/checkbox-hover.png);
     }
+}
+.contact-checkbox-error{
+    width: 24px;
+    height: 24px;
+    background-image: url(/assets/checkbox/checkbox-error.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .left{
     width: 911px;
