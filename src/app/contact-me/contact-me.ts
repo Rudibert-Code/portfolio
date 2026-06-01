@@ -8,6 +8,8 @@ interface Contacts{
   highlight:boolean
 }
 
+
+
 @Component({
   selector: 'app-contact-me',
   imports: [],
@@ -15,6 +17,9 @@ interface Contacts{
   styleUrl: './contact-me.scss',
 })
 export class ContactMe {
+
+  btnCondition:string = '/assets/checkbox/checkbox-default.png';
+
   contacts:Contacts[]=[
     {
       icon:'/assets/icons/Icons_email.png',
@@ -27,4 +32,8 @@ export class ContactMe {
       highlight:false
     },
   ]
+
+  checkBox(){
+    this.btnCondition = '/assets/checkbox/checkbox-checked.png';
+  }
 }

@@ -17,6 +17,31 @@
     align-items: center;
     gap: 21px;
 }
+.button-active{
+    cursor: pointer;
+    width: 134px;
+    height: 48px;
+    color: var(--highlight);
+    border-color: #89BCD9;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: #262e3400;
+
+    &:hover{
+        color: var(--main-bg);
+        background-color: #89BCD9;
+        transition: 0.5s;
+    }
+}
+.button-inactive{
+    width: 134px;
+    height: 48px;
+    color: #8e9ca8;
+    border-color:  #8e9ca8;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: #262e3400;
+}
 .even{
     justify-content: space-evenly;
 }

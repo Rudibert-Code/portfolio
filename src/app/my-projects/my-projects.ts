@@ -13,6 +13,25 @@ interface Technologies {
   icon3?:string,
 }
 
+// Project deatils in einfachem array speichern; diese über interface deffinierte ID oä. abfragen -> siehe: footer quicklinks
+
+  let myProjects = [
+    {
+      title:'1. Jump N Run',
+      selected:true,
+      about:'Project description...'
+    },
+    {
+      title:'2. Pokedex',
+      selected:false,
+      about:'Project description...',
+      organisation:'Workflow details...',
+      experiences:'Experiecnes...',
+    },
+  ]
+
+
+
 @Component({
   selector: 'app-my-projects',
   imports: [],
