@@ -66,19 +66,25 @@
     width: 445px;
     height: 80px;
 }
-input{
+.content-box-large{
+    width: 911px;
+    height: 194px;
+}
+.input-frame{
     border-color: #89BCD9;
     border-style: solid;
     border-radius: 50px;
     background-color: #00000000;
     color: var(--basic);
+    &:hover{
+        background-color: var(--overlay);
+    }
+    &__error{
+        border-color:var (--error);
+    }
 }
 .padding{
     padding-left: 32px;
-}
-.large-input{
-    width: 911px;
-    height: 194px;
 }
 .contact-checkbox{
     width: 24px;

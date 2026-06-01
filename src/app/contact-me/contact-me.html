@@ -23,24 +23,24 @@
         </section>
         <section class="contact-base">
             <div>
-                <p class="padding font-b color-highliht">Your Name</p>
-                <input class="content-box" type="text">
+                <p class="padding font-b color-highliht" id="contact-name">Your Name</p>
+                <input class="content-box input-frame" type="text">
             </div>
             <div>
-                <p class="padding font-b color-highliht">Your Email</p>
-                <input class="content-box" type="text">
+                <p class="padding font-b color-highliht" id="contact-email">Your Email</p>
+                <input class="content-box input-frame" type="text">
             </div>
         </section>
         <section>
-            <p class="padding font-b color-highliht">Your Message</p>
-            <input class="large-input" type="text">
+            <p class="padding font-b color-highliht" id="contact-message">Your Message</p>
+            <input class="content-box-large input-frame" type="text">
         </section>
         <section class="contact-base left">
             <img class="contact-checkbox btn" (click)="checkBox()" src="{{btnCondition}}" alt="">
             <p>I've read the <a class="btn font-b color-highliht" href=""> privacy policy </a> and agree to the processing of my data as outlined.</p>
         </section>
         <section class="contact-base right">
-            <button class="button-inactive" id="btn-send">Send</button>
+            <button (click)="contactSend()" class="button-inactive" id="btn-send">Send</button>
         </section>
     </section>
 

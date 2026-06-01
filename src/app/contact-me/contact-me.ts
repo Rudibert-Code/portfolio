@@ -36,4 +36,8 @@ export class ContactMe {
   checkBox(){
     this.btnCondition = '/assets/checkbox/checkbox-checked.png';
   }
+
+  contactSend(){
+    
+  }
 }
