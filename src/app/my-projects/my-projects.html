@@ -7,7 +7,7 @@
         <section class="my-projects-base column">
             <div class="row bound-left gap">
                 @for (project of projects; track $index) {
-                    <div class="project-title btn " id="{{project.projectID}}">
+                    <div (click)="showDetails(project)" class="project-title btn " id="{{project.projectID}}">
                         <h4>{{project.title}}</h4>
                     </div>
                 }

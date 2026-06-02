@@ -1,19 +1,30 @@
 import { Component } from '@angular/core';
 
 interface Projects {
+  projectID:string,
   title:string,
-  projectID:number
-}
-interface Technologies {
-  icon1:string,
-  icon2?:string,
-  icon3?:string,
+  selected:boolean,
+  about:string,
+  organisation?:string,
+  experiences?:string,
+  tech_1:string,
+  tech_2?:string,
+  tech_3?:string,
+  img:string
 }
 
-// Project deatils in einfachem array speichern; diese über interface deffinierte ID oä. abfragen -> siehe: footer quicklinks
+@Component({
+  selector: 'app-my-projects',
+  imports: [],
+  templateUrl: './my-projects.html',
+  styleUrl: './my-projects.scss',
+})
 
-  let myProjects = [
+export class MyProjects {
+
+  projects:Projects [] = [
     {
+      projectID:'1',
       title:'1. Jump N Run',
       selected:true,
       about:'A 2D platformer. No game engines used during this projects.',
@@ -25,6 +36,7 @@ interface Technologies {
       img:'/assets/projetcs/SpaceBlast.png'
     },
     {
+      projectID:'2',
       title:'2. Pokédex',
       selected:false,
       about:'A collection of the first 151 Pokémon, with optional detail viewer and search option.',
@@ -37,31 +49,11 @@ interface Technologies {
     },
   ]
 
-
-
-@Component({
-  selector: 'app-my-projects',
-  imports: [],
-  templateUrl: './my-projects.html',
-  styleUrl: './my-projects.scss',
-})
-
-export class MyProjects {
-
-  projects:Projects[]=[
-    {
-      title:'1. Jump N Run',
-      projectID:1,
-    },
-    {
-      title:'2. Pokedex',
-      projectID:2,
-    },
-      {
-      title:'3. WIP',
-      projectID:3,
-    },
-  ]
+  showDetails(X:Projects){
+    let screenShot = document.getElementById('project_screenshot') as HTMLImageElement;
+    screenShot.src = X.img;
+    document.getElementById(X.projectID)?.classList.toggle('project-selected');
+  }
 
   liveTest(){
     window.open("https://bjoernsagmeister.developerakademie.net/jump-n-run");

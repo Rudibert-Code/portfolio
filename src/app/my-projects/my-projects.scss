@@ -23,10 +23,20 @@
     padding: 32px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    > h4{
+    color: var(--highlight);
     &:hover{
-        background-color: var(--overlay);
+        color: var(--basic);
         transition: 0.5s;
     }
+}
+}
+.project-selected{
+    cursor: pointer;
+    padding: 32px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--overlay);
     > h4{
     color: var(--highlight);
     &:hover{
