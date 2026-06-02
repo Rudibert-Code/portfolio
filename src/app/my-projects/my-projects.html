@@ -7,7 +7,7 @@
         <section class="my-projects-base column">
             <div class="row bound-left gap">
                 @for (project of projects; track $index) {
-                    <div class="project-title btn ">
+                    <div class="project-title btn " id="{{project.projectID}}">
                         <h4>{{project.title}}</h4>
                     </div>
                 }
@@ -16,26 +16,39 @@
                 <div class="project-details gap">
                     <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
                     <section class="column">
-                        <h4>Placeholder</h4>
-                        <p>Placeholder</p>
+
+
+                        <h4 id="title">Placeholder</h4>
+                        
+                        <p id="description">Placeholder</p>
+
+
                     </section>
                 </div>
                 <div class="column">
                     <h4>Technologies</h4>
                     <div class="row gap">
-                        @for (technology of technologies; track $index) {
-                            <div class="project-icon">
-                            <img src="{{technology.icon1}}" alt="">
-                            </div>
-                            <div class="project-icon">
-                            <img src="{{technology.icon2}}" alt="">
-                            </div>
-                            <div class="project-icon">
-                            <img src="{{technology.icon3}}" alt="">
-                            </div>
-                        }
+
+
+                        <div class="project-icon">
+                            <img src="/assets/icons/Icons_JavaScript.png" alt="" id="tech_1">
+                        </div>
+
+                        <div class="project-icon">
+                            <img src="/assets/icons/Icons_HTML.png" alt="" id="tech_2">
+                        </div>
+
+                        <div class="project-icon">
+                            <img src="/assets/icons/Icons_CSS.png" alt="" id="tech_3">
+                        </div>
+
+
                     </div>
-                    <img class="project-img" src="/assets/projetcs/SpaceBlast.png" alt="" id="project-screen-shot">
+
+
+                    <img class="project-img" src="/assets/projetcs/SpaceBlast.png" alt="" id="project_screenshot">
+                    
+                    
                     <div class="row gap">
                         <button (click)="liveTest()" class="btn">Live Test</button>
                         <button (click)="gitHub()" class="btn">GitHub</button>
