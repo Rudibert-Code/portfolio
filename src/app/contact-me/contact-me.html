@@ -1,10 +1,4 @@
-<head>
-    <script defer src="./contact-me.ts"></script>
-</head>
-
-
 <section class="contact-container">
-
     <section class="column gap nav-bar-padding" id="contact-me">
         <div class="contact-header gap">
             <div></div>
@@ -18,12 +12,8 @@
                 <p class="font-b color-basic">Placeholder text ...</p>
             </div>
             <div class="content-box">
-                @for (contact of contacts; track $index) {
-                    <div class="contact-data padding">
-                        <img src="{{contact.icon}}" alt="">
-                        <p>{{contact.info}}</p>
-                    </div>
-                }
+                <div class="content-box__email"></div>
+                <div class="content-box__tel"></div>
             </div>
         </section>
         <section class="contact-base">

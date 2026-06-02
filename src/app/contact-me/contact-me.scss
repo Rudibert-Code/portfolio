@@ -80,6 +80,24 @@
 .content-box{
     width: 445px;
     height: 80px;
+    &__email{
+        height: 30px;
+        background-image: url(/assets/icons/links/Enail_default.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        &:hover{
+            background-image: url(/assets/icons/links/Enail_hover.png);
+        }
+    }
+    &__tel{
+        height: 30px;
+        background-image: url(/assets/icons/links/Tel_default.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        &:hover{
+            background-image: url(/assets/icons/links/Tel_hover.png);
+        }
+    }
 }
 .relative{
     margin-top: 32px;
