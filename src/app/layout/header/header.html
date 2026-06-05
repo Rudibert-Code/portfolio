@@ -2,17 +2,17 @@
 
     <section class="mobile-header-top">
         <img src="/assets/LOGO.png" alt="">
-        <img class="btn" src="/assets/mobile-menu.png" alt="">
+        <img (click)="openBurgerMenu()" class="btn" src="/assets/mobile-menu.png" alt="">
     </section>
 
-    <section class="bg-shape hide">  
-        <div class="burger-menu hide">
+    <section class="bg-shape">  
+        <div class="burger-menu inactive">
             <a class="selection" href="#why-me">Why me</a>
             <a class="selection" href="#my-skills">Skills</a>
             <a class="selection" href="#my-projects">Projects</a>
             <a class="selection" href="#contact-me">Contact</a>
         </div>
-        <img class="photo-mobile" src="/assets/mobile_pic.png" alt="">
+        <img class="photo-mobile" src="/assets/mobile_pic.png" alt="" id="mobilePhoto">
         <img class="photo" src="/assets/placeholder_img.png" alt="">
     </section>
 

@@ -14,4 +14,8 @@ export class Header {
   openGitHub(){
     window.open("https://github.com/Rudibert-Code");
   }
+  openBurgerMenu(){
+    let replaceIMG = document.getElementById('mobilePhoto') as HTMLImageElement;
+    replaceIMG.classList.toggle('inactive');
+  }
 }
