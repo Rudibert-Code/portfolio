@@ -32,3 +32,9 @@ nav{
         background-size: contain;
     }
 }
+
+@media(max-width:391px){
+    nav{
+        display: none;
+    }
+}
