@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+let burgerMenuState = false;
+
 @Component({
   selector: 'app-header',
   imports: [],
@@ -17,8 +19,14 @@ export class Header {
   openBurgerMenu(){
     let replaceIMG = document.getElementById('mobilePhoto') as HTMLImageElement;
     let replaceBurgerMenu = document.getElementById('burgerMenu') as HTMLImageElement;
-    
-    replaceIMG.style.display = "none";
-    replaceBurgerMenu.style.display = "flex";
+    if (burgerMenuState == false) {
+      replaceIMG.style.display = "none";
+      replaceBurgerMenu.style.display = "flex"; 
+      burgerMenuState = true;
+    } else{
+      replaceIMG.style.display = "flex";
+      replaceBurgerMenu.style.display = "none";
+      burgerMenuState = false;
+    }
   }
 }
