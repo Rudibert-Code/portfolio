@@ -13,3 +13,17 @@
     width: 860px;
     height: 128px;
 }
+
+@media(max-width:391px){
+    .why-me-ceter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        >p{
+            margin-top: 16px;
+            text-align: center;
+        }
+    }
+}
