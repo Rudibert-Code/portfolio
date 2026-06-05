@@ -60,3 +60,35 @@
     border-radius: 25px;
     margin: 16px;
 }
+.btn1{
+    cursor: pointer;
+    width: 134px;
+    height: 48px;
+    color: var(--highlight);
+    border-color: #89BCD9;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: #89bcd900;
+
+    &:hover{
+        background-color: #3F454A;
+        transition: 0.5s;
+    }
+}
+.btn2{
+    cursor: pointer;
+    width: 134px;
+    height: 48px;
+    color: var(--main-bg);
+    border-color: #89BCD9;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: #89BCD9;
+
+    &:hover{
+        color: var(--main-bg);
+        border-color: #ffffff;
+        background-color: #ffffff;
+        transition: 0.5s;
+    }
+}
