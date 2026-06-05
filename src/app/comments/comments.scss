@@ -31,3 +31,23 @@
         transition: 0.5s;
     }
 }
+
+@media(max-width:391px){
+    .comments-container{
+        width: 390px;
+    } 
+    .comment-base{
+        width: 100%;
+        margin: 32px;
+        > h3{
+            margin-bottom: 64px;
+        }
+    }
+    .comment-box{
+        overflow-y: scroll;
+    }
+    .comment-bg{
+        width: 320px;
+        height: 320px;
+    }
+}
