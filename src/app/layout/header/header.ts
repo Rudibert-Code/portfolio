@@ -16,6 +16,9 @@ export class Header {
   }
   openBurgerMenu(){
     let replaceIMG = document.getElementById('mobilePhoto') as HTMLImageElement;
-    replaceIMG.classList.toggle('inactive');
+    let replaceBurgerMenu = document.getElementById('burgerMenu') as HTMLImageElement;
+    
+    replaceIMG.style.display = "none";
+    replaceBurgerMenu.style.display = "flex";
   }
 }

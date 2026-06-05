@@ -1,10 +1,7 @@
-.inactive{
-    display: none;
-}
 .burger-menu{
     width: 353px;
     height: 376px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -120,6 +117,9 @@
     .bg-shape{
         height: 350px;
         background-image: none;
+        &:hover{
+            background-image: none;
+        }
     }
     .photo{
         display: none;
