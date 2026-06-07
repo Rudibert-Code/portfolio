@@ -23,6 +23,9 @@
 }
 
 @media(max-width:391px){
+    .why-me-base{
+        width: 100%;
+    }
     .why-me-ceter{
         display: flex;
         flex-direction: column;
