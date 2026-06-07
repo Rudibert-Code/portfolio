@@ -52,7 +52,13 @@ export class MyProjects {
   showDetails(X:Projects){
     let screenShot = document.getElementById('project_screenshot') as HTMLImageElement;
     screenShot.src = X.img;
-    document.getElementById(X.projectID)?.classList.toggle('project-selected');
+    if (X.selected == false) {
+      document.getElementById(X.projectID)?.classList.add('project-selected');
+      X.selected = true;
+    } else{
+      document.getElementById(X.projectID)?.classList.remove('project-selected');
+      X.selected = false;
+    }
   }
 
   liveTest(){
