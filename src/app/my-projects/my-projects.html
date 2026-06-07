@@ -1,4 +1,4 @@
-<section class="my-projects-container">
+<section  class="my-projects-container">
 
     <section class="my-projects-base column nav-bar-padding" id="my-projects">
         <div>
@@ -7,7 +7,7 @@
         <section class="my-projects-base column">
             <div class="row bound-left gap">
                 @for (project of projects; track $index) {
-                    <div (click)="showDetails(project)" class="project-title btn " id="{{project.projectID}}">
+                    <div (click)="selectProject(project)" class="project-title btn {{project.bonusclass}}" id="{{project.projectID}}">
                         <h4>{{project.title}}</h4>
                     </div>
                 }
@@ -41,11 +41,7 @@
 
 
                     </div>
-
-
                     <img class="project-img" src="/assets/projetcs/SpaceBlast.png" alt="" id="project_screenshot">
-                    
-                    
                     <div class="project-details-mobile gap">
                         <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
                         <section class="column">
@@ -55,8 +51,6 @@
                         
                         </section>
                     </div>
-
-
                     <div class="row gap">
                         <button (click)="liveTest()" class="btn btn2">Live Test</button>
                         <button (click)="gitHub()" class="btn btn1">GitHub</button>

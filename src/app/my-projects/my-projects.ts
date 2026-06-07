@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 interface Projects {
   projectID:string,
+  bonusclass?:string,
   title:string,
   selected:boolean,
   about:string,
@@ -10,8 +11,13 @@ interface Projects {
   tech_1:string,
   tech_2?:string,
   tech_3?:string,
-  img:string
+  img:string,
+  livetest:string,
+  github:string,
 }
+
+  let projectLinkLiveL: string = "";
+  let projectLinkGitHub: string = "";
 
 @Component({
   selector: 'app-my-projects',
@@ -24,7 +30,8 @@ export class MyProjects {
 
   projects:Projects [] = [
     {
-      projectID:'1',
+      projectID:'0',
+      bonusclass:'project-selected',
       title:'1. Jump N Run',
       selected:true,
       about:'A 2D platformer. No game engines used during this projects.',
@@ -33,10 +40,12 @@ export class MyProjects {
       tech_1:'/assets/icons/Icons_JavaScript.png',
       tech_2:'/assets/icons/Icons_HTML.png',
       tech_3:'/assets/icons/Icons_CSS.png',
-      img:'/assets/projetcs/SpaceBlast.png'
+      img:'/assets/projetcs/SpaceBlast.png',
+      livetest:'https://bjoernsagmeister.developerakademie.net/jump-n-run',
+      github:'https://github.com/Rudibert-Code/jump-n-run.git',
     },
     {
-      projectID:'2',
+      projectID:'1',
       title:'2. Pokédex',
       selected:false,
       about:'A collection of the first 151 Pokémon, with optional detail viewer and search option.',
@@ -45,27 +54,34 @@ export class MyProjects {
       tech_1:'/assets/icons/Icons_JavaScript.png',
       tech_2:'/assets/icons/Icons_HTML.png',
       tech_3:'/assets/icons/Icons_CSS.png',
-      img:'/assets/projetcs/pokemon.jpg'
+      img:'/assets/projetcs/pokemon.jpg',
+      livetest:'https://bjoernsagmeister.developerakademie.net/modul8_pokedex',
+      github:'https://github.com/Rudibert-Code/pokedex.git',
     },
   ]
 
-  showDetails(X:Projects){
+  selectProject(project:Projects){
     let screenShot = document.getElementById('project_screenshot') as HTMLImageElement;
-    screenShot.src = X.img;
-    if (X.selected == false) {
-      document.getElementById(X.projectID)?.classList.add('project-selected');
-      X.selected = true;
-    } else{
-      document.getElementById(X.projectID)?.classList.remove('project-selected');
-      X.selected = false;
+    screenShot.src = project.img;
+    projectLinkLiveL = project.livetest;
+    projectLinkGitHub = project.github;
+    this.resetTitleSelection();
+    document.getElementById(String(project.projectID))?.classList.add('project-selected');
+  }
+
+  resetTitleSelection(){
+    let titleID:string;
+    for (let index = 0; index < this.projects.length; index++) {
+      titleID = String(index);
+      document.getElementById(titleID)?.classList.remove('project-selected');
     }
   }
 
   liveTest(){
-    window.open("https://bjoernsagmeister.developerakademie.net/jump-n-run");
+    window.open(projectLinkLiveL);
   }
   gitHub(){
-    window.open("https://github.com/Rudibert-Code/jump-n-run.git");
+    window.open(projectLinkGitHub);
     
   }
 }
