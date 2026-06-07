@@ -4,6 +4,7 @@ interface Projects {
   projectID:string,
   bonusclass?:string,
   title:string,
+  duration:string,
   selected:boolean,
   about:string,
   organisation:string,
@@ -32,11 +33,14 @@ export class MyProjects {
   projectProcess:string = "Base function first.";
   projectExperience:string= "I learned a lot.";
 
+  projectDuration:string = "2 weeks";
+
   projects:Projects [] = [
     {
       projectID:'0',
       bonusclass:'project-selected',
       title:'1. Jump N Run',
+      duration:'2 weeks',
       selected:true,
       about:'A 2D platformer. No game engines used during this projects.',
       organisation:'Base function first',
@@ -51,6 +55,7 @@ export class MyProjects {
     {
       projectID:'1',
       title:'2. Pokédex',
+      duration:'3 weeks',
       selected:false,
       about:'A collection of the first 151 Pokémon, with optional detail viewer and search option.',
       organisation:'Worked step by step',
@@ -70,6 +75,7 @@ export class MyProjects {
     this.projectDescription = project.about;
     this.projectProcess = project.organisation;
     this.projectExperience = project.experiences;
+    this.projectDuration = project.duration;
     projectLinkLiveL = project.livetest;
     projectLinkGitHub = project.github;
     this.resetTitleSelection();
