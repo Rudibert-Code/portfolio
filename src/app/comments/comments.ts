@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 interface Evaluation {
   name:string,
-  project:string,
+  project?:string,
   comment:string,
   link:string
 } 
@@ -16,22 +16,19 @@ interface Evaluation {
 export class Comments {
   evaluation:Evaluation [] = [
     {
-      name:'Myself',
-      project:'Pokedex',
-      comment:'"I was a joy to work with. 10/10 would do it again."',
-      link:'google.de'
+      name:'Felix Winkler',
+      comment:'"Björn is my daily dedicated study partner. His approach might be a bit unconventional, but he is exceptionally skilled and an absolute asset to any Team."',
+      link:'https://www.linkedin.com/in/felix-winkler-38947a365/'
     },
     {
-      name:'Myself',
-      project:'Jump N Run',
-      comment:'"So much work"',
-      link:'google.de'
+      name:'Felix Winkler 2',
+      comment:'"Björn is my daily dedicated study partner. His approach might be a bit unconventional, but he is exceptionally skilled and an absolute asset to any Team."',
+      link:'https://www.linkedin.com/in/felix-winkler-38947a365/'
     },
     {
-      name:'Myself',
-      project:'Portfolio',
-      comment:'"WIP. Tell you later."',
-      link:'google.de'
+      name:'Felix Winkler 3',
+      comment:'"Björn is my daily dedicated study partner. His approach might be a bit unconventional, but he is exceptionally skilled and an absolute asset to any Team."',
+      link:'https://www.linkedin.com/in/felix-winkler-38947a365/'
     },
   ]
 }

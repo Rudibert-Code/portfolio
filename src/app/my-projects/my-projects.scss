@@ -1,9 +1,6 @@
 .mobile-only{
     display: none;
 }
-.pc-only{
-
-}
 .my-projects-container{
     width: 100%;
     display: flex;
@@ -170,11 +167,9 @@
         align-items: start;
         padding: 48px 0;
     }
-
     .project-icon{
         width: 26px;
     }
-
     .project-details-section{ 
         display: none;
         &-mobile{
@@ -182,7 +177,6 @@
             justify-content: center;
         }
     }
-
     .project-details-base{
         width: 100%;
         display: flex;
@@ -197,7 +191,6 @@
             height: 167px;
         }
     }
-
     .tech-box{
         width: 88%;
         align-items: start;
@@ -211,14 +204,12 @@
     .tech-icons{
         display: none;
     }
-
     .tech-list-2{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: start;
     }
-
     .project-titles{
         max-width: 390px;
     }
@@ -239,17 +230,14 @@
     .my-projects-container{
         width: 390px;
     }
-
     .project-description{
         justify-content: center;
     }
-
     .project-img{
         width: 94%;
         border-radius: 25px;
         margin: 16px;
     }
-
     .project-details-mobile{
         width: 100%;
         display: flex;

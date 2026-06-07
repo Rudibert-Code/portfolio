@@ -1,17 +1,17 @@
 <section class="comments-container">
 
 <section class="comment-base column font-b nav-bar-padding" id="comments">
-    <h3>Need a teamplayer? Here's what my colleges say about me.</h3>
+    <h3 class="comment-title">Need a teamplayer? Here's what my colleges say about me.</h3>
+    <div class="mobile-only">
+        <h3>Need a teamplayer?</h3>
+        <p>Here's what my colleges say about me.</p>
+    </div>
     <section class="comment-box gap">
         @for (comment of evaluation; track $index) {
-            <div class="column comment-bg">
+            <div class="comment-bg">
                 <h3>{{comment.name}}</h3>
-                <div class="row gap">
-                    <p>Project</p>
-                    <p class="color-highliht">{{comment.project}}</p>
-                </div>
                 <p>{{comment.comment}}</p>
-                <a class="btn color-highliht" href="">{{comment.link}}</a>
+                <a class="btn color-highliht" href="{{comment.link}}">Linked In Profile</a>
             </div>
         }
     </section>
