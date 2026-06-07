@@ -8,10 +8,11 @@ import { MyProjects } from './my-projects/my-projects';
 import { Comments } from './comments/comments';
 import { ContactMe } from './contact-me/contact-me';
 import { MainFooter } from './main-footer/main-footer';
+import { PrivacyPolicy } from './privacy-policy/privacy-policy';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Header,WhyMe,MySkills,MyProjects,Comments,ContactMe,MainFooter,NavBar],
+  imports: [RouterOutlet,Header,WhyMe,MySkills,MyProjects,Comments,ContactMe,MainFooter,NavBar,PrivacyPolicy],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
