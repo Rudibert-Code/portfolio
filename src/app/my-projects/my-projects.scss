@@ -62,6 +62,13 @@
     justify-content: center;
     align-items: center;
 }
+.project-details-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 32px;
+}
 .project-img{
     width: 453px;
     height: 312px;

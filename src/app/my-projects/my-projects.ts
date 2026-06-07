@@ -6,8 +6,8 @@ interface Projects {
   title:string,
   selected:boolean,
   about:string,
-  organisation?:string,
-  experiences?:string,
+  organisation:string,
+  experiences:string,
   tech_1:string,
   tech_2?:string,
   tech_3?:string,
@@ -16,8 +16,8 @@ interface Projects {
   github:string,
 }
 
-  let projectLinkLiveL: string = "";
-  let projectLinkGitHub: string = "";
+let projectLinkLiveL:string = "";
+let projectLinkGitHub:string = "";
 
 @Component({
   selector: 'app-my-projects',
@@ -28,6 +28,10 @@ interface Projects {
 
 export class MyProjects {
 
+  projectDescription:string = "A 2D platformer. No game engines used during this projects.";
+  projectProcess:string = "Base function first.";
+  projectExperience:string= "I learned a lot.";
+
   projects:Projects [] = [
     {
       projectID:'0',
@@ -35,7 +39,7 @@ export class MyProjects {
       title:'1. Jump N Run',
       selected:true,
       about:'A 2D platformer. No game engines used during this projects.',
-      organisation:'',
+      organisation:'Base function first',
       experiences:'I learned a lot.',
       tech_1:'/assets/icons/Icons_JavaScript.png',
       tech_2:'/assets/icons/Icons_HTML.png',
@@ -49,7 +53,7 @@ export class MyProjects {
       title:'2. Pokédex',
       selected:false,
       about:'A collection of the first 151 Pokémon, with optional detail viewer and search option.',
-      organisation:'',
+      organisation:'Worked step by step',
       experiences:'There are SO MANY pokémon!',
       tech_1:'/assets/icons/Icons_JavaScript.png',
       tech_2:'/assets/icons/Icons_HTML.png',
@@ -63,6 +67,9 @@ export class MyProjects {
   selectProject(project:Projects){
     let screenShot = document.getElementById('project_screenshot') as HTMLImageElement;
     screenShot.src = project.img;
+    this.projectDescription = project.about;
+    this.projectProcess = project.organisation;
+    this.projectExperience = project.experiences;
     projectLinkLiveL = project.livetest;
     projectLinkGitHub = project.github;
     this.resetTitleSelection();
