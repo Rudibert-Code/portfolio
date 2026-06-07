@@ -89,9 +89,9 @@
 
 @media(max-width:391px){
     .mobile-header-top{
-        width: 90%;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         margin-top: 24px;
     }
