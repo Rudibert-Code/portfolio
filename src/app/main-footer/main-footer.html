@@ -1,14 +1,29 @@
 <footer>
-    <section class="footer-legal">
-        <a routerLink="legal">Impressum</a>
-        <a href="">© Claudia Fahrer 2024</a>
+    <section class="footer-container">
+        <section class="footer-legal">
+            <a routerLink="legal">Impressum</a>
+            <a href="">© Claudia Fahrer 2024</a>
+        </section>
+        <section>
+            <img src="/assets/Logo_dark.png" alt="">
+        </section>
+        <section class="row gap">
+            @for (link of link; track $index) {
+                <div (click)="open(link)" class="footer-icon{{link.class}}"></div>
+            }
+        </section>
     </section>
-    <section>
+
+    <section class="footer-container-mobile">
         <img src="/assets/Logo_dark.png" alt="">
-    </section>
-    <section class="row gap">
-        @for (link of link; track $index) {
-            <div (click)="open(link)" class="footer-icon{{link.class}}"></div>
-        }
+        <section class="icons-mobile">
+            @for (link of link; track $index) {
+                <div (click)="open(link)" class="footer-icon{{link.class}}"></div>
+            }
+        </section>
+            <section class="footer-legal-mobile">
+            <a routerLink="legal">Impressum</a>
+            <a href="">© Claudia Fahrer 2024</a>
+        </section>
     </section>
 </footer>
