@@ -6,7 +6,8 @@
             <div class="project-titles">
                 @for (project of projects; track $index) {
                     <div (click)="selectProject(project)" class="project-title btn {{project.bonusclass}}" id="{{project.projectID}}">
-                        <h4>{{project.title}}</h4>
+                        <h4 class="pc-only">{{project.title}}</h4>
+                        <h4 class="mobile-only">{{project.mobiletitle}}</h4>
                     </div>
                 }
             </div>
@@ -14,65 +15,79 @@
                 <section class="project-box">
                     <section class="project-details-section">
                         <div class="project-details gap">
-                        <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
-                        <section class="column">
-                            <div class="">
-                                <div class="project-description">
-                                    <h4>About the project</h4>
-                                    <p id="project-duration">Duration: {{projectDuration}}</p>
+                            <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
+                            <section class="column">
+                                <div class="">
+                                    <div class="project-description">
+                                        <h4>About the project</h4>
+                                        <p id="project-duration">Duration: {{projectDuration}}</p>
+                                    </div>
+                                    <p id="project-description">{{projectDescription}}</p>
                                 </div>
-                                <p id="project-description">{{projectDescription}}</p>
-                            </div>
-                        </section>
+                            </section>
                         </div>
                         <div class="project-details gap">
-                        <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
-                        <section class="column">
-                            <div class="">
-                                <h4>How I organized my work process</h4>
-                                <p id="project-organisation">{{projectProcess}}</p>
-                            </div>
-                        </section>
+                            <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
+                            <section class="column">
+                                <div class="">
+                                    <h4>How I organized my work process</h4>
+                                    <p id="project-organisation">{{projectProcess}}</p>
+                                </div>
+                            </section>
                         </div>
                         <div class="project-details gap">
-                        <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
-                        <section class="column">
-                            <div class="">
-                                <h4>My experience</h4>
-                                <p id="project-experience">{{projectExperience}}</p>
-                            </div>
-                        </section>
+                            <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
+                            <section class="column">
+                                <div class="">
+                                    <h4>My experience</h4>
+                                    <p id="project-experience">{{projectExperience}}</p>
+                                </div>
+                            </section>
                         </div>
                     </section>
                     <div class="project-details-base gap">
-                        <h4>Technologies</h4>
-                        <div class="row gap">
-
-
-                        <div class="project-icon">
-                            <img src="/assets/icons/Icons_JavaScript.png" alt="" id="tech_1">
-                        </div>
-
-                        <div class="project-icon">
-                            <img src="/assets/icons/Icons_HTML.png" alt="" id="tech_2">
-                        </div>
-
-                        <div class="project-icon">
-                            <img src="/assets/icons/Icons_CSS.png" alt="" id="tech_3">
-                        </div>
-
-
-                        </div>
+                        <section class="tech-box">
+                            <h4>Technologies</h4>
+                            <div class="tech-icons" id="tech-list">
+                                <img class="project-icon" src="/assets/icons/Icons_JavaScript.png">
+                                <img class="project-icon" src="/assets/icons/Icons_JavaScript.png">
+                                <img class="project-icon" src="/assets/icons/Icons_JavaScript.png">
+                                <img class="project-icon" src="/assets/icons/Icons_HTML.png">
+                                <img class="project-icon" src="/assets/icons/Icons_CSS.png">
+                            </div>
+                            <div class="mobile-only tech-list-2">
+                                <p>Tech: {{projectTech}}</p>
+                                <p>Duration: {{projectDuration}}</p>
+                            </div>
+                        </section>
                         <img class="project-img" src="/assets/projetcs/SpaceBlast.png" alt="" id="project_screenshot">
-                        <div class="project-details-mobile gap">
-                            <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
-                            <section class="column">
-    
-                            <h4 id="title">Placeholder</h4>
-                            <p id="description">Placeholder</p>
-                        
+
+                        <section class="project-details-section-mobile">
+                            <section class="column tech-box">
+                                <div class="">
+                                    <div class="project-description">
+                                        <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
+                                        <h4>About the project</h4>
+                                    </div>
+                                    <p id="project-description">{{projectDescription}}</p>
+                                </div>
+                                <div class="">
+                                    <div class="project-description">
+                                        <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
+                                        <h4>How I organized my work process</h4>
+                                    </div>
+                                    <p id="project-description">{{projectProcess}}</p>
+                                </div>
+                                <div class="">
+                                    <div class="project-description">
+                                        <img class="project-icon" src="/assets/my-skill-highlight.png" alt="">
+                                        <h4>My experience</h4>
+                                    </div>
+                                    <p id="project-description">{{projectExperience}}</p>
+                                </div>
                             </section>
-                        </div>
+                        </section>
+
                         <div class="row gap">
                         <button (click)="liveTest()" class="btn btn2">Live Test</button>
                         <button (click)="gitHub()" class="btn btn1">GitHub</button>
