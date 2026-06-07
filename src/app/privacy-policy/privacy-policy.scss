@@ -1,0 +1,14 @@
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-box{
+    width: 100%;
+    max-width: 1440px;
+    margin: 62px 32px;
+}
+.index-link{
+    color: var(--highlight);
+}
