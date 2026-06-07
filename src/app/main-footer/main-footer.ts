@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from "@angular/router";
 
 interface Links{
   class:string,
@@ -8,7 +9,7 @@ interface Links{
 
 @Component({
   selector: 'app-main-footer',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './main-footer.html',
   styleUrl: './main-footer.scss',
 })
