@@ -61,17 +61,20 @@
         }
     }
     .comment-box{
-        overflow-y: scroll;
-        justify-content: center;
-        gap: 32px;
+        overflow: auto;
+        white-space: nowrap;
+        padding: 24px;
     }
     .comment-bg{
         width: 290px;
         height: 290px;
-        background-size: contain;
         >h3 {
             font-size: 16px;
             color: var(--basic);
+        }
+        >p{
+            width: 50%;
+            height: 50%;
         }
     }
 }
