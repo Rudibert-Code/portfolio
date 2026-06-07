@@ -14,6 +14,18 @@ let boxChecked:boolean = false;
   styleUrl: './contact-me.scss',
 })
 export class ContactMe {
+//contactInit(){
+//  let screenWidth = screen.width;
+//  let inputName = document.getElementById('contactname') as HTMLInputElement;
+//  let inputEMail = document.getElementById('contactemail') as HTMLInputElement;
+//  let inputMessage = document.getElementById('contactmessage') as HTMLInputElement;
+//  if (screenWidth <= 1439) {
+//    console.log(screenWidth);
+//    inputName.value = 'Your Name';
+//    inputEMail.value = 'Your EMail';
+//    inputMessage.value = 'Your Message';
+//  }
+//}
 
   btnCondition:string = '/assets/checkbox/checkbox-default.png';
 
