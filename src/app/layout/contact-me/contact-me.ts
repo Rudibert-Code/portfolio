@@ -92,7 +92,7 @@ export class ContactMe {
     }
     if(boxChecked == false){
       document.getElementById('contactCheckboxError')?.classList.remove('contact-checkbox');
-      this.btnCondition = '/assets/checkbox/checkbox-error.png';
+      this.btnCondition = '/public/assets/checkbox/checkbox-error.png';
     }
   }
 
