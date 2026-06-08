@@ -89,20 +89,20 @@
     height: 80px;
     &__email{
         height: 30px;
-        background-image: url(/assets/icons/links/Enail_default.png);
+        background-image: url(assets/icons/links/Enail_default.png);
         background-repeat: no-repeat;
         background-size: contain;
         &:hover{
-            background-image: url(/assets/icons/links/Enail_hover.png);
+            background-image: url(assets/icons/links/Enail_hover.png);
         }
     }
     &__tel{
         height: 30px;
-        background-image: url(/assets/icons/links/Tel_default.png);
+        background-image: url(assets/icons/links/Tel_default.png);
         background-repeat: no-repeat;
         background-size: contain;
         &:hover{
-            background-image: url(/assets/icons/links/Tel_hover.png);
+            background-image: url(assets/icons/links/Tel_hover.png);
         }
     }
 }
@@ -135,17 +135,17 @@
 .contact-checkbox{
     width: 24px;
     height: 24px;
-    background-image: url(/assets/checkbox/checkbox-default.png);
+    background-image: url(assets/checkbox/checkbox-default.png);
     background-repeat: no-repeat;
     background-size: contain;
     &:hover{
-        background-image: url(/assets/checkbox/checkbox-hover.png);
+        background-image: url(assets/checkbox/checkbox-hover.png);
     }
 }
 .contact-checkbox-error{
     width: 24px;
     height: 24px;
-    background-image: url(/assets/checkbox/checkbox-error.png);
+    background-image: url(assets/checkbox/checkbox-error.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
