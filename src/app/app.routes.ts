@@ -16,4 +16,8 @@ export const routes: Routes = [
         path:'legal',
         component:LegalNotice
     },
+    {
+        path:'**',
+        redirectTo:''
+    },
 ];
