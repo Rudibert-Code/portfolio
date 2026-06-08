@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
 
-let checkbox:string = '/assets/checkbox/checkbox-default.png';
+let checkbox:string = '/public/assets/checkbox/checkbox-default.png';
 
 let nameChecked:boolean = false;
 let emailChecked:boolean = false;
@@ -16,14 +16,14 @@ let boxChecked:boolean = false;
 })
 export class ContactMe {
 
-  btnCondition:string = '/assets/checkbox/checkbox-default.png';
+  btnCondition:string = '/public/assets/checkbox/checkbox-default.png';
 
   checkBox(){
     if (boxChecked == false) {
-      this.btnCondition = '/assets/checkbox/checkbox-checked.png';
+      this.btnCondition = '/public/assets/checkbox/checkbox-checked.png';
       boxChecked = true;
     } else{
-      this.btnCondition = '/assets/checkbox/checkbox-default.png';
+      this.btnCondition = '/public/assets/checkbox/checkbox-default.png';
       boxChecked = false;
     }
     this.toggleButton();
