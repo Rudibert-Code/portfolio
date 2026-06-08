@@ -65,8 +65,9 @@
         background-color: var(--highlight);
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: start;
         align-items: center;
+        gap: 4px;
     }
     .icons-mobile{
         display: flex;

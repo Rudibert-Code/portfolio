@@ -1,3 +1,6 @@
+.mobile-header-top{
+    display: none;
+}
 .main-container{
     width: 100%;
     display: flex;
@@ -16,5 +19,17 @@
 .return-button{
     >img{
         rotate: 90deg;
+    }
+}
+@media(max-width:391px){
+    .responsive{
+        display: none;
+    }
+    .mobile-header-top{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 24px;
     }
 }
