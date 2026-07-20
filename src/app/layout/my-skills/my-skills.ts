@@ -14,27 +14,27 @@ interface Skill {
 export class MySkills {
   skills:Skill[]=[
     {
-      img:'/public/assets/icons/Icons_Angular.png',
+      img:'assets/icons/Icons_Angular.png',
       name:'Angular',
     },
     {
-      img:'/public/assets/icons/Icons_TypeScript.png',
+      img:'assets/icons/Icons_TypeScript.png',
       name:'TypeScript',
     },
     {
-      img:'/public/assets/icons/Icons_JavaScript.png',
+      img:'assets/icons/Icons_JavaScript.png',
       name:'JavaScript',
     },
     {
-      img:'/public/assets/icons/Icons_HTML.png',
+      img:'assets/icons/Icons_HTML.png',
       name:'HTML',
     },
     {
-      img:'/public/assets/icons/Icons_CSS.png',
+      img:'assets/icons/Icons_CSS.png',
       name:'CSS',
     },
     {
-      img:'/public/assets/icons/Icons_Git.png',
+      img:'assets/icons/Icons_Git.png',
       name:'Git',
     },
   ]

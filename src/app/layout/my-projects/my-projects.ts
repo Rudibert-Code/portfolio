@@ -78,6 +78,27 @@ export class MyProjects {
       livetest:'https://bjoernsagmeister.developerakademie.net/modul8_pokedex',
       github:'https://github.com/Rudibert-Code/pokedex.git',
     },
+    {
+      projectID:'2',
+      title:'3. Join',
+      mobiletitle:'3. Join',
+      duration:'5 weeks',
+      selected:false,
+      about:'A time / task management application. Team project.',
+      organisation:'Daily team meetings using Trello for organisation.',
+      experiences:'yes',
+      techused:[
+        '/public/assets/icons/Icons_Git.png',
+        '/public/assets/icons/Icons_Angular.png',
+        '/public/assets/icons/Icons_TypeScript.png',
+        '/public/assets/icons/Icons_HTML.png',
+        '/public/assets/icons/Icons_CSS.png',
+      ],
+      mobiletech:'TypeScript, Angular, HTML, CSS',
+      img:'/public/assets/projetcs/pokemon.jpg',
+      livetest:'https://bjoernsagmeister.developerakademie.net/modul8_pokedex',
+      github:'https://github.com/Rudibert-Code/join',
+    },
   ]
 
   selectProject(project:Projects){
