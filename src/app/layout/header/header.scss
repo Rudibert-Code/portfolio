@@ -91,9 +91,12 @@
     .mobile-header-top{
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        margin-top: 24px;
+        margin-top: 16px;
+        >img{
+            padding-inline: 16px;
+        }
     }
     .header-container{
         width: 100%;
@@ -131,8 +134,7 @@
     }
         .photo-mobile{
         display: flex;
-        width: 291px;
-        height: 350px;
+        height: 310px;
     }
 }
 
