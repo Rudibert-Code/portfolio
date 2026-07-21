@@ -10,7 +10,9 @@
         @for (comment of evaluation; track $index) {
             <div class="comment-bg">
                 <h3>{{comment.name}}</h3>
-                <p>{{comment.comment}}</p>
+                <div class="test">
+                    <span>{{comment.comment}}</span>
+                </div>
                 <a class="btn color-highliht" href="{{comment.link}}">Linked In Profile</a>
             </div>
         }

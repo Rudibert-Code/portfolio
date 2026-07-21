@@ -9,7 +9,7 @@
 }
 .comment-base{
     width: 1440px;
-    margin: 32px;
+    //margin: 32px;
     > h3{
         margin-bottom: 64px;
     }
@@ -26,6 +26,7 @@
     height: 400px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -51,11 +52,11 @@
         align-items: start;
     }
     .comments-container{
-        width: 390px;
+        width: 90%;
     } 
     .comment-base{
         width: 100%;
-        margin: 32px;
+        //margin: 32px;
         > h3{
             margin-bottom: 32px;
         }
@@ -72,9 +73,19 @@
             font-size: 16px;
             color: var(--basic);
         }
-        >p{
-            width: 50%;
+        //>span{
+        //    overflow-wrap: break-word;
+        //    width: 50%;
+        //    height: 50%;
+        //}
+    }
+    .test{
+        width: 100px;
+        height: 100px;
+    }
+        span{
+            object-fit: fill;
+            width: 100%;
             height: 50%;
         }
-    }
 }
