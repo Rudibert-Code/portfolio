@@ -1,22 +1,49 @@
-<section class="comments-container">
+<!--<section class="comments-container">
+    <section class="comment-base column font-b nav-bar-padding" id="comments">
+        <h3 class="comment-title">Need a teamplayer? Here's what my colleges say about me.</h3>
+        <div class="mobile-only">
+            <h3>Need a teamplayer?</h3>
+            <p>Here's what my colleges say about me.</p>
+        </div>
+        <section class="comment-box gap">
+            @for (comment of evaluation; track $index) {
+                <div class="comment-bg">
+                    <h3>{{comment.name}}</h3>
+                    <span>{{comment.comment}}</span>
+                    <a class="btn color-highliht" href="{{comment.link}}">Linked In Profile</a>
+                </div>
+            }
+        </section>
+    </section>
+</section>-->
 
-<section class="comment-base column font-b nav-bar-padding" id="comments">
-    <h3 class="comment-title">Need a teamplayer? Here's what my colleges say about me.</h3>
-    <div class="mobile-only">
+
+
+<section class="parent">
+    
+    <h3 class="comment_title">Need a teamplayer? Here's what my colleges say about me.</h3>
+    <div class="comment_title_mobile">
         <h3>Need a teamplayer?</h3>
         <p>Here's what my colleges say about me.</p>
     </div>
-    <section class="comment-box gap">
-        @for (comment of evaluation; track $index) {
-            <div class="comment-bg">
-                <h3>{{comment.name}}</h3>
-                <div class="test">
-                    <span>{{comment.comment}}</span>
+
+    <section class="comment" id="comments">
+
+
+        <section class="comment_list">
+
+            @for (comment of evaluation; track $index) {
+                <div class="comment_container">
+                    <h3>{{comment.name}}</h3>
+                    <div class="comment_text-area">
+                        <span>{{comment.comment}}</span>
+                    </div>
+                    <a class="btn color-highliht" href="{{comment.link}}">Linked In Profile</a>
                 </div>
-                <a class="btn color-highliht" href="{{comment.link}}">Linked In Profile</a>
-            </div>
-        }
+            }
+            
+        </section>
+
     </section>
-</section>
 
 </section>
